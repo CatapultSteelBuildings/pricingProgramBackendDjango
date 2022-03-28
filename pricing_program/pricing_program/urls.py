@@ -20,9 +20,11 @@ from pricing_program.modules.users import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/login/', login),
     path('users/create/', create),
     path('users/edit/', edit),
     path('users/delete/', delete),
-    path('users/logout/', logout)
+    path('users/login/', login),
+    path('users/logout/', logout),
+    path('users/show/', show),
+    path('users/load/', load),
 ]
