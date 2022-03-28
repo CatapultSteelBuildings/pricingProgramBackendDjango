@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from pricing_program.modules.users import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/login/', login),
+    path('users/create/', create),
+    path('users/edit/', edit),
+    path('users/delete/', delete),
+    path('users/logout/', logout)
 ]
